@@ -1,8 +1,8 @@
 #include <stdio.h>
      
-int getMissingNo(int a[], int n)
+int getMissingNumber(int a[], int n)// лтримати пропущене число
 {
-    int i, total;
+    int i, total;//total-формула суми
     total = (n + 1) * (n + 2) / 2;
     for (i = 0; i < n; i++)
         total -= a[i];
@@ -13,10 +13,10 @@ int getMissingNo(int a[], int n)
 int main()
 {
     int a[] = { 1, 2, 3, 4, 6,7};
-    int miss = getMissingNo(a,5);
-    int b  = miss+1;
+    int miss = getMissingNumber(a,5);
+    int answear  = miss+1;
     
-    printf ("%d\n",b);
+    printf ("%d\n",answear);
     
 }
 
